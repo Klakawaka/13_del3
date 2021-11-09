@@ -18,6 +18,5 @@ public class Gamebord {
         Montreal = 340;
         NewYork = 420;
         Dubai = 450;
-
     }
 }
