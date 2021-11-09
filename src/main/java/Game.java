@@ -40,13 +40,13 @@ public class Game {
         field.setBackGroundColor(Color.CYAN);
 
         field = fields[11];
-        field.setTitle("xx");
-        field.setSubText(" Price:   xx");
+        field.setTitle("Athen");
+        field.setSubText(" Price:   120");
         field.setBackGroundColor(Color.PINK);
 
         field = fields[13];
-        field.setTitle("xx");
-        field.setSubText(" Price:   xx");
+        field.setTitle("Prag");
+        field.setSubText(" Price:   145");
         field.setBackGroundColor(Color.PINK);
 
         field = fields[16];
@@ -96,7 +96,7 @@ public class Game {
 
         field = fields[39];
         field.setTitle("Dubai");
-        field.setSubText(" Price:   445");
+        field.setSubText(" Price:   450");
         field.setBackGroundColor(Color.BLUE);
 
 
