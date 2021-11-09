@@ -23,5 +23,5 @@ public class Bank {
 
     // Ændrer spillerens balance til 10000
 player.setBalance(10000);
-    lkhjh
+    kkkl
 }
