@@ -1,16 +1,19 @@
+import gui_fields.GUI_Board;
 import gui_fields.GUI_Field;
 import gui_main.GUI;
 
 import java.awt.*;
-
+/*
 public class Game {
     public static void main(String[] args) {
-        GUI gui = new GUI();
+        GUI gui;
         GUI_Field field;
-        GUI_Field[] fields = gui.getFields();
+        GUI_Field[] fields = new GUI_Field[24];
 
 
-        field = fields[0];
+
+        field = new GUI {
+        };
         field.setTitle("Start");
         field.setForeGroundColor(Color.RED);
         field.setBackGroundColor(Color.BLACK);
@@ -99,6 +102,9 @@ public class Game {
         field.setSubText(" Price:   450");
         field.setBackGroundColor(Color.BLUE);
 
+        gui=new GUI(fields);
+
+
 
 
 
@@ -136,3 +142,5 @@ public class Game {
 
 
 
+
+ */
