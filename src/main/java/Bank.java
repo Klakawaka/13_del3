@@ -16,12 +16,10 @@ public class Bank {
         return true;
     }
 
-    public int getSaldo() {
-        return saldo;
+    //---------public int getSaldo() {
+      //-------------  return saldo;
     }
 
 
     // Ændrer spillerens balance til 10000
-player.setBalance(10000);
-    kkklkkc
-}
+//----------player.setBalance(10000);
