@@ -7,7 +7,7 @@ public class Bank {
         balance = 1000;
     }
 
-    public boolean haev(int money) {
+    public boolean withdraw(int money) {
 
         if ((balance + money) < 0)
             return false;
