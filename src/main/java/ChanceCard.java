@@ -10,14 +10,12 @@ public class ChanceCard {
 
                 getChancecard(player,playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
 
-
-        int tendollargift, tendollarloss, moveplayer3foward, moveplayer3back, movetojail;
-
-                //tendollargift =
-                //tendollarloss = 1
-                //moveplayer3foward = 2
-                //moveplayer3back = 3
-                //movetojail = 4
+                //case 1/kort 1 = tendollargift
+                //case 2/kort 2 = tendollarloss
+                //case 3/kort 3 = moveplayer3foward
+                //case 4/kort 4 = moveplayer3back
+                //case 5/kort 5 = movetojail
+                //case 6/kort 6 = get6dollarsfromeachplayer
 
 
         }
@@ -46,7 +44,8 @@ public class ChanceCard {
                                 System.out.println("Du skal i fængsel i en runde");
                                 player.setPosition(17); //17 er bare eksempel, ændre til nummer for fængsel.
                                 break;
-                        case 6:
+                        case 6: //metode: trækker 6 dollars fra alles balance.
+                                //efterfølgende får player som trækker kortet, 6$ gange med antal spiller (playerlist)
                                 System.out.println("du får 6 dollars af hver spiller");
                                 for (int i = 0; i < playerlist.length; i++) {
                                         playerlist[i].addBalance(-6);
