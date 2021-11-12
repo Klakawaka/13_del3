@@ -18,7 +18,7 @@ public class Gui {
                 new GUI_Chance("?" , "Try ur Luck!" , "You landed on ''?'' This field yield many random possibilities!" , Color.orange, Color.black),
                 new GUI_Street("Madrid" , "Price: 180 $" , "This is the capital of Spain." , "180" , Color.pink , Color.black),
                 new GUI_Street("Paris" , "Price: 190 $" , "This is the capital of France." , "190" , Color.pink , Color.black),
-                new GUI_Refuge() ,
+                new GUI_Refuge("default" , "Parkingspot" , "FREE PARK" ,"This is a parkingspot which allows you to park here for free! Plus add all uncollected fines to your own bank deposit!" , Color.gray , Color.black) ,
                 new GUI_Street("Copenhagen" , "Price 210 $" , "This is the capital of Denmark." , "210" , Color.white , Color.black) ,
                 new GUI_Street("Stockholm" , "Price: 220 $" , "This is the capital of Sweden." , "220" , Color.white , Color.black),
                 new GUI_Chance("?" , "Try ur Luck!" , "You landed on ''?'' This field yield many random possibilities!" , Color.orange, Color.black),
