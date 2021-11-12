@@ -1,5 +1,5 @@
 public class Gameboard {
-    int Nairobi, Tripoli, Bukarest, Brasilia, Athen, Prague, Madrid, Paris,Copenhagen;
+    int Nairobi, Tripoli, Bukarest, Brasilia, Athen, Prague, Madrid, Paris, Copenhagen;
     int Stockholm, Rome, Dublin, Singapore, Montreal, NewYork, Dubai;
     public void value() {
         Nairobi = 60;
