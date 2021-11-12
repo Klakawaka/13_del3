@@ -1,9 +1,13 @@
 import gui_fields.*;
 import gui_main.GUI;
 import java.awt.*;
-
 public class Gui {
     public static void main(String[] args) {
+Dice dice1,dice2;
+
+dice1 = new Dice();
+dice2 = new Dice();
+
 
         GUI_Field[] fields = {
                 new GUI_Start("START", "Receive 50 $","This is the starting point of the game - You receive 50 $ when your character passes through it.", Color.red, Color.black),
@@ -32,11 +36,46 @@ public class Gui {
                 new GUI_Street("New york" , "Price: 450 $" , "This is the biggest city of the United States. Population: 8.23 Million." , "450" , Color.BLUE , Color.black),
         };
         GUI gui = new GUI(fields);
-    }
+
+
+
+
+        // Opretter spiller
+        GUI_Player player = new GUI_Player("Stephen", 2000);
+        gui.addPlayer(player);
+
+// Henter feltet
+        GUI_Field field = gui.getFields()[0];
+
+// Sæt bilen til at blive vist
+        field.setCar(player, true);
+
+        String chosenButton = gui.getUserButtonPressed(
+                "Click a button",
+                "Button 1", "Button 2"
+        );
+
+
+        if (chosenButton == "Button 1"){
+                    int dice1Facevalue = dice1.roll();
+                    int dice2Facevalue = dice2.roll();
+                    dice1.roll();
+                    dice2.roll();
+                    gui.setDice(dice1Facevalue,dice2Facevalue);
+                     int dicesum = dice1Facevalue + dice2Facevalue;
+            gui.getFields()[dicesum].setCar(player, true);
+            gui.getFields()[0].setCar(player, false);
+
+
+
+
+            }
 
 
 
 
 
 
-}
+
+
+}}
