@@ -1,23 +1,23 @@
 public class Bank {
 // Konto på 1000
 
-    private int saldo;
+    private int balance;
 
-    public void Konto() {
-        saldo = 1000;
+    public void account() {
+        balance = 1000;
     }
 
-    public boolean haev(int penge) {
+    public boolean withdraw(int money) {
 
-        if ((saldo + penge) < 0)
+        if ((balance + money) < 0)
             return false;
 
-        saldo = saldo + penge;
+        balance = balance + money;
         return true;
     }
 
     public int getSaldo() {
-        return saldo;
+        return balance;
     }
 
 
