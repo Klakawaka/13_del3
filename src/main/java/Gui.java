@@ -49,27 +49,28 @@ dice2 = new Dice();
 
 // Sæt bilen til at blive vist
         field.setCar(player, true);
-
+        while(true) {
         String chosenButton = gui.getUserButtonPressed(
                 "Click a button",
                 "Button 1", "Button 2"
         );
 
 
-        if (chosenButton == "Button 1"){
-                    int dice1Facevalue = dice1.roll();
-                    int dice2Facevalue = dice2.roll();
-                    dice1.roll();
-                    dice2.roll();
-                    gui.setDice(dice1Facevalue,dice2Facevalue);
-                     int dicesum = dice1Facevalue + dice2Facevalue;
+        if (chosenButton == "Button 1") {
+            int dice1Facevalue = dice1.roll();
+            int dice2Facevalue = dice2.roll();
+            int dicesum ;
+            //int oldsum = dicesum;
+            //gui.getFields()[oldsum].setCar(player, false);
+            dice1.roll();
+            dice2.roll();
+            dicesum = dice1Facevalue + dice2Facevalue;
+            gui.setDice(dice1Facevalue, dice2Facevalue);
             gui.getFields()[dicesum].setCar(player, true);
-            gui.getFields()[0].setCar(player, false);
 
 
 
-
-            }
+        }}
 
 
 
