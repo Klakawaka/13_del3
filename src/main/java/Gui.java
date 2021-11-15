@@ -35,7 +35,7 @@ dice2 = new Dice();
                 new GUI_Street("Dubai" , "Price: 420 $" , "This is the capital of the United Arab Emirates" , "420" , Color.BLUE , Color.black),
                 new GUI_Street("New york" , "Price: 450 $" , "This is the biggest city of the United States. Population: 8.23 Million." , "450" , Color.BLUE , Color.black),
         };
-        GUI gui = new GUI(fields);
+        GUI gui = new GUI(fields,Color.cyan);
 
 
 
