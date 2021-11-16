@@ -45,7 +45,7 @@ public class Gui {
                 new GUI_Street("Dubai" , "Price: 420 $" , "This is the capital of the United Arab Emirates" , "420" , Color.BLUE , Color.black),
                 new GUI_Street("New york" , "Price: 450 $" , "This is the biggest city of the United States. Population: 8.2 Million." , "450" , Color.BLUE , Color.black),
         };
-        gui = new GUI(fields); //initilize gui variable
+        gui = new GUI(fields, Color.CYAN); //initilize gui variable
         gui.addPlayer(player); //adds a palyer to the game
         playerCarPosition = 0; //init a players car position
         field = gui.getFields()[playerCarPosition]; //initilize field variable, use playerCarPosition to get the players car position
