@@ -25,7 +25,7 @@ public class Player {
         System.out.println("How many are playing?");
         // -------
 
-        if (totalPlayers > 2){
+        /*if (totalplayers > 2){
             System.out.println("End game");
         }
 
@@ -37,6 +37,8 @@ public class Player {
 
         }
 
+
+         */
     }
 
 }
