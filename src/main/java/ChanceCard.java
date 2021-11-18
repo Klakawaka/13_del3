@@ -30,7 +30,12 @@ public class ChanceCard {
                                 break;
                         case 2:
                                 System.out.println("Du mister 10 dollars");
-                                player.addBalance(-10);
+                                //TODO
+                                // addBalance returnerer true/false afhængig af, om beløbet kunne trækkes
+                                Boolean success = player.addBalance(-10);
+                                if(!success){
+                                        //vis besked.. beløbet kunne ikke trækkes
+                                }
                                 break;
                         case 3:
                                 System.out.println("Du skal rykke 3 felter frem");
