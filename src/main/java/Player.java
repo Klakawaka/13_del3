@@ -2,13 +2,23 @@ import java.util.Scanner;
 public class Player {
 
         String name;
-        int balance;
         int position;
+        Bank account;
 
-            //adbalance bruges til case 1,2 og 6//
-        public void addBalance(int toAddBalance){
-            balance = balance + toAddBalance;
-        }
+    public Player() {
+        account = new Bank();
+    }
+
+    public int getBalance() {
+        return account.getBalance();
+    }
+
+    public boolean addBalance(int amount) {
+        return account.addBalance(amount);
+    }
+
+
+    //adbalance bruges til case 1,2 og 6//
             //adposition bruges til case 3 og 4
         public void addpostion(int toAddPosition){
             position = position + toAddPosition;

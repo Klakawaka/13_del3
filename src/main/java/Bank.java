@@ -7,7 +7,7 @@ public class Bank {
         balance = 1000;
     }
 
-    public boolean withdraw(int money) {
+    public boolean addBalance(int money) {
 
         if ((balance + money) < 0)
             return false;
@@ -16,7 +16,7 @@ public class Bank {
         return true;
     }
 
-    public int getSaldo() {
+    public int getBalance() {
         return balance;
     }
 
