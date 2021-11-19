@@ -3,10 +3,16 @@ public class Player {
 
         String name;
         int position;
+        int balance;
         Bank account;
 
     public Player() {
         account = new Bank();
+    }
+
+    public Player(String name, int balance) {
+        this.name = name;
+        this.balance = balance;
     }
 
     public int getBalance() {
