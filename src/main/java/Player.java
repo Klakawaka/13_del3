@@ -1,24 +1,15 @@
 import java.util.Scanner;
 public class Player {
 
-        String name;
+        public String player;
+        int totalPlayers= 4;
+        int balance;
         int position;
-        Bank account;
 
-    public Player() {
-        account = new Bank();
-    }
-
-    public int getBalance() {
-        return account.getBalance();
-    }
-
-    public boolean addBalance(int amount) {
-        return account.addBalance(amount);
-    }
-
-
-    //adbalance bruges til case 1,2 og 6//
+            //adbalance bruges til case 1,2 og 6//
+        public void addBalance(int toAddBalance){
+            balance = balance + toAddBalance;
+        }
             //adposition bruges til case 3 og 4
         public void addpostion(int toAddPosition){
             position = position + toAddPosition;
@@ -33,22 +24,20 @@ public class Player {
     public void toMain(){
         Scanner pl = new Scanner(System.in);
         System.out.println("How many are playing?");
-        // -------
+        //Hvis antal spiller er mindre end 2 kan man ikke spille.
 
-        /*if (totalplayers > 2){
+        if (totalPlayers > 2){
             System.out.println("End game");
         }
 
         else {
             System.out.println("Enter name");
-            String playername = pl.nextLine();
+            player = pl.nextLine();
             Player player1 = new Player();
-            System.out.println("Player = " + playername);
+            System.out.println("Player = " + player);
 
         }
 
-
-         */
     }
 
 }
