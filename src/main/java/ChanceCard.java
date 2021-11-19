@@ -1,11 +1,15 @@
 import java.lang.Math;
+
 public class ChanceCard {
-        public static void main(String[] args) {
+
+        public void test() {
+
+
                 Player player1 = new Player();
                 Player player2 = new Player();
                 Player player3 = new Player();
                 Player player4 = new Player();
-                )
+
                 Player[] playerlist = new Player[4];
                 playerlist[0] = player1;
                 playerlist[1] = player2;
@@ -13,7 +17,7 @@ public class ChanceCard {
                 playerlist[3] = player4;
                 Player player = player1;
 
-                getChancecard(player,playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
+                getChancecard(player, playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
 
                 //case 1/kort 1 = tendollargift
                 //case 2/kort 2 = tendollarloss
@@ -22,8 +26,8 @@ public class ChanceCard {
                 //case 5/kort 5 = movetojail
                 //case 6/kort 6 = get6dollarsfromeachplayer
 
-
         }
+
         public static void getChancecard(Player player, Player[] playerlist)
         {
                 int card = (int) (Math.random() * 6) + 1;
@@ -65,4 +69,5 @@ public class ChanceCard {
                 }
         }
 }
+
 
