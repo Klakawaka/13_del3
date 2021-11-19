@@ -3,9 +3,14 @@ public class ChanceCard {
         public static void main(String[] args) {
                 Player player1 = new Player();
                 Player player2 = new Player();
-                Player[] playerlist = new Player[2];
+                Player player3 = new Player();
+                Player player4 = new Player();
+                )
+                Player[] playerlist = new Player[4];
                 playerlist[0] = player1;
                 playerlist[1] = player2;
+                playerlist[2] = player3;
+                playerlist[3] = player4;
                 Player player = player1;
 
                 getChancecard(player,playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
@@ -34,7 +39,7 @@ public class ChanceCard {
                                 // addBalance returnerer true/false afhængig af, om beløbet kunne trækkes
                                 Boolean success = player.addBalance(-10);
                                 if(!success){
-                                        //vis besked.. beløbet kunne ikke trækkes
+                                        System.out.println("Der bliver ikke trukket 10 dollars, da du går i minus");
                                 }
                                 break;
                         case 3:
@@ -47,7 +52,7 @@ public class ChanceCard {
                                 break;
                         case 5:
                                 System.out.println("Du skal i fængsel i en runde");
-                                player.setPosition(17); //17 er bare eksempel, ændre til nummer for fængsel.
+                                player.setPosition(7); //17 er bare eksempel, ændre til nummer for fængsel.
                                 break;
                         case 6: //metode: trækker 6 dollars fra alles balance.
                                 //efterfølgende får player som trækker kortet, 6$ gange med antal spiller (playerlist)
