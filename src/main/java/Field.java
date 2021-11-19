@@ -1,7 +1,8 @@
-public class Gameboard {
+public class Field {
     int Nairobi, Tripoli, Bukarest, Brasilia, Athen, Prague, Madrid, Paris, Copenhagen;
     int Stockholm, Rome, Dublin, Singapore, Montreal, NewYork, Dubai;
-    public int Gameboard; {
+
+    public Field() {
         Nairobi = 60;
         Tripoli = 65;
         Bukarest = 85;
