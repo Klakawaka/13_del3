@@ -21,7 +21,7 @@ public class Player {
             position = moveto;
         }
 
-    public void toMain(){
+    public void player(){
         Scanner pl = new Scanner(System.in);
         System.out.println("How many are playing?");
         //Hvis antal spiller er mindre end 2 kan man ikke spille.
