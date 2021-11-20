@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.sql.SQLOutput;
 
 public class ChanceCard {
 
@@ -56,7 +57,7 @@ public class ChanceCard {
                                 break;
                         case 5:
                                 System.out.println("Du skal i fængsel i en runde");
-                                player.setPosition(7); //17 er bare eksempel, ændre til nummer for fængsel.
+                                player.setPosition(7); //7 er position for fængsel
                                 break;
                         case 6: //metode: trækker 6 dollars fra alles balance.
                                 //efterfølgende får player som trækker kortet, 6$ gange med antal spiller (playerlist)
@@ -65,6 +66,30 @@ public class ChanceCard {
                                         playerlist[i].addBalance(-6);
                                 }
                                 player.addBalance(playerlist.length * 6);
+                                break;
+                        case 7://metode: trækker 8 dollars fra alle spilleres balance.
+                                //efterfølgende får spilleren som trækker kortet, 8$ gange med antal spiller (playerlist.lenght)
+                                System.out.println("du får 8 dollars af hver spiller");
+                                for (int i = 0; i < playerlist.length; i++) {
+                                        playerlist[i].addBalance(-8);
+                                }
+                                player.addBalance(playerlist.length * 8);
+                                break;
+                        case 8: //metode: giver 2 dollar til alle spilleres balance
+                                //efterfølgende trækkes der for spiller som trækker kortet, -2$ gange med antal spiller
+                                System.out.println("Du skal give 2 dollars til hver spiller");
+                                for (int i = 0; i < playerlist.length; i++) {
+                                        playerlist[i].addBalance(2);
+                                }
+                                player.addBalance(playerlist.length * (-2));
+                                break;
+                        case 9:
+                                System.out.println("Du skal rykke 5 felter frem");
+                                player.addpostion(5);
+                                break;
+                        case 10:
+                                System.out.println("Du skal rykke 5 felter tilbage");
+                                player.addpostion(-5);
                                 break;
                 }
         }
