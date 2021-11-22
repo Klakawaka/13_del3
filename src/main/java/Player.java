@@ -40,22 +40,10 @@ public class Player {
     public void toMain(){
         Scanner pl = new Scanner(System.in);
         System.out.println("How many are playing?");
-        // -------
-
-        /*if (totalplayers > 2){
-            System.out.println("End game");
-        }
-
-        else {
-            System.out.println("Enter name");
-            String playername = pl.nextLine();
-            Player player1 = new Player();
-            System.out.println("Player = " + playername);
-
-        }
 
 
-         */
+
+
     }
 
 }

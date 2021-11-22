@@ -47,13 +47,13 @@ int card = 1;
 
                                 break;
                         case 2:
-                                System.out.println("Du mister 10 dollars");
+                             /*   System.out.println("Du mister 10 dollars");
                                 //TODO
                                 // addBalance returnerer true/false afhængig af, om beløbet kunne trækkes
                                 Boolean success = player.addBalance(-10);
                                 if(!success){
                                         System.out.println("Der bliver ikke trukket 10 dollars, da du går i minus");
-                                }
+                                }*/
                                 break;
                         case 3:
                                 System.out.println("Du skal rykke 3 felter frem");
