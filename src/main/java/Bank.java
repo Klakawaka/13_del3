@@ -8,7 +8,7 @@ public class Bank {
     }
 
     public boolean addBalance(int money) {
-
+        this.balance = money;
         if ((balance + money) < 0)
             return false;
 

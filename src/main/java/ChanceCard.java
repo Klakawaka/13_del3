@@ -1,24 +1,27 @@
+import gui_fields.GUI_Player;
+
 import java.lang.Math;
 import java.sql.SQLOutput;
 
 public class ChanceCard {
-
+Player player;
+Player [] playerlist;
         public void test() {
 
 
-                Player player1 = new Player();
-                Player player2 = new Player();
-                Player player3 = new Player();
-                Player player4 = new Player();
+                //Player player1 = new Player();
+               // Player player2 = new Player();
+                //Player player3 = new Player();
+                //Player player4 = new Player();
 
-                Player[] playerlist = new Player[4];
-                playerlist[0] = player1;
-                playerlist[1] = player2;
-                playerlist[2] = player3;
-                playerlist[3] = player4;
-                Player player = player1;
+                //Player[] playerlist = new Player[];
+                //playerlist[0] = player1;
+                //playerlist[1] = player2;
+                //playerlist[2] = player3;
+                //playerlist[3] = player4;
+                //Player player = player1;
 
-                getChancecard(player, playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
+               // getChancecard(player, playerlist); //statisk miderlertidigt, slet når det instantieres (new Chancecard)
 
                 //case 1/kort 1 = tendollargift
                 //case 2/kort 2 = tendollarloss
@@ -29,13 +32,13 @@ public class ChanceCard {
 
         }
 
-        public static void getChancecard(Player player, Player[] playerlist)
+        public int  getChancecard(GUI_Player[] list)
         {
-                int card = (int) (Math.random() * 6) + 1;
+                 int card = (int) (Math.random() * 10) + 1;
                 switch (card) {
                         case 1:
                                 System.out.println("Du får en gave på 10 dollars");
-                                player.addBalance(10);
+                                player.addBalance(-10);
 
                                 break;
                         case 2:
@@ -91,8 +94,9 @@ public class ChanceCard {
                                 System.out.println("Du skal rykke 5 felter tilbage");
                                 player.addpostion(-5);
                                 break;
-                }
+                }       return card;
         }
+
 }
 
 

@@ -11,6 +11,7 @@ public class Gui {
         GUI gui; //create gui variable
         GUI_Field field; //create field variable
     int[] playerlistPosition;
+    ChanceCard chance;
 
 
         //Dice dice1,dice2; Del af vores gamle kode.
@@ -147,7 +148,15 @@ public class Gui {
 
                 gui.setDice(roll1Val, roll2Val); //change the dice in the gui
                 gui.getFields()[playerlistPosition[x]].setCar(playerList[x], true); //show the car in the new position
-        }}}
+
+                if (playerlistPosition[x] == 3 || playerlistPosition[x] == 9 || playerlistPosition[x] == 15 || playerlistPosition[x]== 21){
+                    chance.getChancecard(playerList);
+                }
+
+
+        }}
+
+}
 
 
 

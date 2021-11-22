@@ -58,6 +58,8 @@ public class Field {
             case 24:
                 NewYork = 450;
                 break;
+
+
         }
     }
 }

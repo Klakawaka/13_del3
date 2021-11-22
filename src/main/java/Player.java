@@ -4,7 +4,7 @@ public class Player {
     String name;
     int position;
     int balance;
-    Bank account;
+    Bank account = new Bank();
 
     public Player() {
         account = new Bank();
@@ -13,6 +13,7 @@ public class Player {
     public Player(String name, int balance) {
         this.name = name;
         this.balance = balance;
+        account.addBalance(balance);
     }
 
     public int getBalance() {
