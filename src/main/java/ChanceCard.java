@@ -4,8 +4,11 @@ import java.lang.Math;
 import java.sql.SQLOutput;
 
 public class ChanceCard {
-Player player;
+Player player = new Player ();
 Player [] playerlist;
+
+        private final int MAX = 10;
+        int card;
         public void test() {
 
 
@@ -34,11 +37,13 @@ Player [] playerlist;
 
         public int  getChancecard(GUI_Player[] list)
         {
-                 int card = (int) (Math.random() * 10) + 1;
+
+                 //int card = (int) (Math.random() * MAX) + 1;
+int card = 1;
                 switch (card) {
                         case 1:
                                 System.out.println("Du får en gave på 10 dollars");
-                                player.addBalance(-10);
+                                player.addBalance(+ 10);
 
                                 break;
                         case 2:

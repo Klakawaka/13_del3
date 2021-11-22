@@ -8,7 +8,6 @@ public class Game {
     public static void main(String[] args) {
         Player[] playerList;
         Gui gui = new Gui();
-        Bank bank = new Bank();
 
         int amount = gui.hentAntalSpillere();
         playerList = new Player[amount];

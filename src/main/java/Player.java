@@ -10,7 +10,7 @@ public class Player {
         account = new Bank();
     }
 
-    public Player(String name, int balance) {
+    public Player(String name,  int balance) {
         this.name = name;
         this.balance = balance;
         account.addBalance(balance);

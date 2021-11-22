@@ -11,7 +11,7 @@ public class Gui {
         GUI gui; //create gui variable
         GUI_Field field; //create field variable
     int[] playerlistPosition;
-    ChanceCard chance;
+    ChanceCard chance = new ChanceCard();
 
 
         //Dice dice1,dice2; Del af vores gamle kode.
