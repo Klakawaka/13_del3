@@ -1,65 +1,101 @@
 public class Field {
     int Start, Nairobi, Tripoli, Bukarest, Brasilia, Jail, Athen, Prague, Madrid, Paris, Copenhagen;
     int Stockholm, Rome, Dublin, Singapore, Montreal, Dubai, NewYork;
-    Field field;
+
     ChanceCard chanceCard = new ChanceCard();
 
     public void field(int x) {
         switch (x) {
-            case 1:
-                 //Start = 0; (Skal den med)
-            case 2:
+            case  0:
+                System.out.println("test");
+                 Start = 0; //(Skal den med)
+            case  1:
+                System.out.println("test1");
                 Nairobi = 60;
                 break;
-            case 3:
+            case  2:
+                System.out.println("test1");
                 Tripoli = 65;
                 break;
-            case 5:
+            case 3:
+                System.out.println("test1");
+                chanceCard.getChancecard(chanceCard.player);
+                break;
+            case 4:
+                System.out.println("test1");
                 Bukarest = 85;
                 break;
-            case 6:
+            case 5:
+                System.out.println("test1");
                 Brasilia = 95;
                 break;
-            case 7:
+            case 6:
+                System.out.println("test1");
                 //Jail=?; (Skal den med?)
                 break;
-            case 8:
+            case 7:
+                System.out.println("test1");
                 Athen = 120;
                 break;
-            case 9:
+            case 8:
+                System.out.println("test1");
                 Prague = 145;
                 break;
-            case 11:
+            case 9:
+                System.out.println("test1");
+                chanceCard.getChancecard(chanceCard.player);
+                break;
+            case 10:
+                System.out.println("test1");
                 Madrid = 180;
                 break;
-            case 12:
+            case 11:
+                System.out.println("test1");
                 Paris = 190;
                 break;
+
             case 13:
-                //chanceCard.getChancecard();
+                System.out.println("test1");
+                //refugue
                 break;
             case 14:
+                System.out.println("test1");
                 Copenhagen = 210;
                 break;
             case 15:
+                System.out.println("test1");
                 Stockholm = 220;
                 break;
+            case 16:
+                System.out.println("test1");
+                //jail
+                break;
             case 17:
+                System.out.println("test1");
                 Rome = 270;
                 break;
             case 18:
+                System.out.println("test1");
                 Dublin = 285;
                 break;
+            case 19:
+                System.out.println("test1");
+                chanceCard.getChancecard(chanceCard.player);
+                break;
             case 20:
+                System.out.println("test1");
                 Singapore = 325;
                 break;
             case 21:
+                System.out.println("test1");
                 Montreal = 340;
                 break;
             case 23:
+                System.out.println("test1");
                 Dubai = 420;
                 break;
             case 24:
+                System.out.println("test1");
                 NewYork = 450;
                 break;
 

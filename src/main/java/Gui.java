@@ -136,7 +136,8 @@ public class Gui {
     public void waitButton(){
              String chosenButton = gui.getUserButtonPressed("Click to play", "Play"); //create and initilize chosenButton
     }
-    public void changeBalance(int playerBalance, int newBalance){
+    public void changeBalance(int playerNum, int newBalance){
+            playerList[playerNum].setBalance(newBalance);
 
     }
 

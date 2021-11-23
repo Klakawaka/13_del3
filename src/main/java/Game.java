@@ -8,6 +8,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
+    Field field = new Field();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
 
@@ -19,6 +20,17 @@ public class Game {
         //hard coded scenario
         player.account.addBalance1(50);
         gui.moveplayer(turnNum,player.position);
+        field.field(player.position);
+        /*test
+        if (player.position == 6){
+            gui.changeBalance(turnNum,500);
+
+
+        }
+
+         */
+
+
     }
     public  void game() {
 
