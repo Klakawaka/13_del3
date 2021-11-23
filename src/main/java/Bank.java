@@ -20,6 +20,10 @@ public class Bank {
         return balance;
     }
 
+    public void addBalance1(int amount){
+        balance += amount;
+
+    }
 
     // Ændrer spillerens balance til 10000
 //player.setBalance(10000);

@@ -2,6 +2,7 @@ public class Field {
     int Start, Nairobi, Tripoli, Bukarest, Brasilia, Jail, Athen, Prague, Madrid, Paris, Copenhagen;
     int Stockholm, Rome, Dublin, Singapore, Montreal, Dubai, NewYork;
     Field field;
+    ChanceCard chanceCard = new ChanceCard();
 
     public void field(int x) {
         switch (x) {
@@ -33,6 +34,9 @@ public class Field {
                 break;
             case 12:
                 Paris = 190;
+                break;
+            case 13:
+                //chanceCard.getChancecard();
                 break;
             case 14:
                 Copenhagen = 210;

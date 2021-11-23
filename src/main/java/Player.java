@@ -10,25 +10,30 @@ public class Player {
         account = new Bank();
     }
 
-    public Player(String name,  int balance) {
+    public Player(String name) {
         this.name = name;
-        this.balance = balance;
-        account.addBalance(balance);
+        account.account();
+
+
+
     }
 
     public int getBalance() {
         return account.getBalance();
     }
 
-    public boolean addBalance(int amount) {
-        return account.addBalance(amount);
+    public int addBalance(int amount) {
+        //return account.addBalance(amount);
+        balance = amount + balance;
+        System.out.println(balance);
+        return balance;
     }
 
 
     //adbalance bruges til case 1,2 og 6//
     //adposition bruges til case 3 og 4
     public void addpostion(int toAddPosition){
-        position = position + toAddPosition;
+        position = (position + toAddPosition)%23;
     }
     //setposition bruges til case 5, i case 5 rykkes man til fængsel. Nummeret for dette felt skal ændres
     //under chancekort-klassen i player.setPosition(x)//

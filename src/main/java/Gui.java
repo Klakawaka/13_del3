@@ -4,8 +4,8 @@ import java.awt.*;
 
 public class Gui {
         String player_name;
-        Dice dice1 = new Dice(); //create and initilize dice1
-        Dice dice2 = new Dice(); //create and initilize dice2
+         //create and initilize dice1
+         //create and initilize dice2
         GUI_Player[] playerList; //create and initilize player //create and initilize player
         int playerCarPosition; //create car position tracking variable
         GUI gui; //create gui variable
@@ -122,38 +122,23 @@ public class Gui {
             playerlistPosition = new int[list.length];
             for (int i = 0; i < x; i++) {
                 player_name = gui.getUserString("Enter player name");
-                playerList[i] = new GUI_Player(player_name, list[i].balance);
+                playerList[i] = new GUI_Player(player_name, list[i].account.getBalance());
                 gui.addPlayer(playerList[i]);
-                gui.getFields()[0].setCar(playerList[0], true);
+                gui.getFields()[0].setCar(playerList[i], true);
             }
         }
 
-        public void moveplayer(Player[] list, int x){
-            String chosenButton = gui.getUserButtonPressed("Click to play", "Play"); //create and initilize chosenButton
+        public void moveplayer(int playerTurn, int newPosition){
+                gui.getFields()[playerlistPosition[playerTurn]].setCar(playerList[playerTurn], false); //hide the players car
+                gui.getFields()[newPosition].setCar(playerList[playerTurn], true); //show the car in the new position
+                playerlistPosition[playerTurn] = newPosition;
+               }
+    public void waitButton(){
+             String chosenButton = gui.getUserButtonPressed("Click to play", "Play"); //create and initilize chosenButton
+    }
+    public void changeBalance(int playerBalance, int newBalance){
 
-            if (chosenButton == "Play") {
-                gui.getFields()[playerlistPosition[x]].setCar(playerList[x], false); //hide the players car
-
-                int roll1Val = dice1.roll(); //roll dice one
-                int roll2Val = dice2.roll(); //roll dice two
-                int diceRollSum = roll1Val + roll2Val; //sum of the rolls
-
-                playerCarPosition = diceRollSum + playerCarPosition; //update the position tracke
-                playerlistPosition[x] += diceRollSum;
-
-                if (playerlistPosition[x] >=24) {
-                    playerlistPosition[x] = 0 ;
-                }
-
-                gui.setDice(roll1Val, roll2Val); //change the dice in the gui
-                gui.getFields()[playerlistPosition[x]].setCar(playerList[x], true); //show the car in the new position
-
-                if (playerlistPosition[x] == 3 || playerlistPosition[x] == 9 || playerlistPosition[x] == 15 || playerlistPosition[x]== 21){
-                    chance.getChancecard(playerList);
-                }
-
-
-        }}
+    }
 
 }
 

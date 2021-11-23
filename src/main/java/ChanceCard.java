@@ -43,7 +43,7 @@ int card = 1;
                 switch (card) {
                         case 1:
                                 System.out.println("Du får en gave på 10 dollars");
-                                player.addBalance(+ 10);
+                                player.addBalance( 10);
 
                                 break;
                         case 2:
