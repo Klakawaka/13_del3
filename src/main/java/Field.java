@@ -3,8 +3,8 @@ public class Field {
     int Stockholm, Rome, Dublin, Singapore, Montreal, Dubai, NewYork;
 
     ChanceCard chanceCard = new ChanceCard();
-
-    public void field(int x) {
+//Create field class and rename to board class.
+    public void field(Player player,int x) {
         switch (x) {
             case  0:
                 System.out.println("test");
@@ -19,7 +19,7 @@ public class Field {
                 break;
             case 3:
                 System.out.println("test1");
-                chanceCard.getChancecard(chanceCard.player);
+                chanceCard.getChancecard(player);
                 break;
             case 4:
                 System.out.println("test1");
@@ -43,7 +43,7 @@ public class Field {
                 break;
             case 9:
                 System.out.println("test1");
-                chanceCard.getChancecard(chanceCard.player);
+                chanceCard.getChancecard(player);
                 break;
             case 10:
                 System.out.println("test1");
@@ -80,7 +80,7 @@ public class Field {
                 break;
             case 19:
                 System.out.println("test1");
-                chanceCard.getChancecard(chanceCard.player);
+                chanceCard.getChancecard(player);
                 break;
             case 20:
                 System.out.println("test1");
