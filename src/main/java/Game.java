@@ -1,8 +1,4 @@
-import gui_fields.GUI_Board;
-import gui_fields.GUI_Field;
-import gui_main.GUI;
 
-import java.awt.*;
 public class Game {
     Dice dice1 = new Dice();
     Dice dice2 = new Dice();
@@ -18,17 +14,16 @@ public class Game {
         dicesum = dice1.getFaceValue() + dice2.getFaceValue();
         player.addpostion(dicesum);
         //hard coded scenario
-        player.account.addBalance1(50);
         gui.moveplayer(turnNum,player.position);
         field.field(player.position);
-        /*test
-        if (player.position == 6){
-            gui.changeBalance(turnNum,500);
+        if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
+            int newamount = player.account.addNewBalance(+ 10);
+            gui.changeBalance(turnNum,newamount);
 
 
         }
 
-         */
+
 
 
     }

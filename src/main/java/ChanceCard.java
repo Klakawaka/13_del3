@@ -44,7 +44,7 @@ int card = 1;
                 switch (card) {
                         case 1:
                                 System.out.println("Du får en gave på 10 dollars");
-                                bank.addBalance1( 10);
+                                //bank.addBalance1( 10);
 
 
                                 break;
