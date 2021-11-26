@@ -18,8 +18,6 @@ private final int MAX = 12 ;
                 System.out.println("Du får en bøde på 200 dollars");
                 player.account.addNewBalance(-200);
                 break;
-
-
             case 3:
                 System.out.println("Du skal rykke 3 felter frem");
                 player.addpostion(3);
@@ -66,13 +64,9 @@ private final int MAX = 12 ;
                 System.out.println("Du får en bøde på 500 dollars");
                 player.account.addNewBalance(-500);
                 break;
-
-
         }
         return card;
     }
-
-
 }
 
 

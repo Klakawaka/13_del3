@@ -29,8 +29,7 @@ public class Game {
 
     }
     public  void game() {
-
-
+        
         int amount = gui.hentAntalSpillere();
         playerList = new Player[amount];
         for(int i = 0; i < amount; i++ ) {
