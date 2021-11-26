@@ -27,6 +27,5 @@ public class Bank {
         return balance;
     }
 
-    // Ændrer spillerens balance til 10000
-//player.setBalance(10000);
+
 }

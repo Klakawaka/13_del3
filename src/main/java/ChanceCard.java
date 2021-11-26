@@ -1,13 +1,9 @@
-import gui_fields.GUI_Player;
+
 
 import java.lang.Math;
-import java.sql.SQLOutput;
 
 public class ChanceCard {
-   // Player[] playerlist;
 
-    //Bank bank = new Bank();
-//int card = 3;
 private final int MAX = 12 ;
     public int getChancecard(Player player) {
 
