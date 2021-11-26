@@ -68,7 +68,7 @@ private final int MAX = 12 ;
                 break;
             case 12:
                 System.out.println("Du får en bøde på 500 dollars");
-                player.account.addNewBalance(+500);
+                player.account.addNewBalance(-500);
                 break;
 
 
