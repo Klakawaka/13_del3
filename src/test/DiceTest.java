@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 public class DiceTest {
 
     @Test
+
     public void test(){
         Dice die = new Dice();
         for (int i = 0; i < 50; i++) {

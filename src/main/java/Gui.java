@@ -141,6 +141,10 @@ public class Gui {
 
     }
 
+public void Dice(int dice1,int dice2){
+            gui.setDice(dice1,dice2);
+    }
+
 }
 
 
