@@ -54,47 +54,50 @@ public class Board {
                 Paris = 190;
                 break;
 
-            case 13:
+            case 12:
                 System.out.println("test1");
                 //refugue
                 break;
-            case 14:
+            case 13:
                 System.out.println("test1");
                 Copenhagen = 210;
                 break;
-            case 15:
+            case 14:
                 System.out.println("test1");
                 Stockholm = 220;
                 break;
-            case 16:
-                System.out.println("test1");
-                //jail
+            case 15:
+                chanceCard.getChancecard(player);
                 break;
-            case 17:
+
+            case 16:
                 System.out.println("test1");
                 Rome = 270;
                 break;
-            case 18:
+            case 17:
                 System.out.println("test1");
                 Dublin = 285;
                 break;
-            case 19:
+            case 18:
                 System.out.println("test1");
-                chanceCard.getChancecard(player);
+                //jail
                 break;
-            case 20:
+            case 19:
                 System.out.println("test1");
                 Singapore = 325;
                 break;
-            case 21:
+            case 20:
                 System.out.println("test1");
                 Montreal = 340;
                 break;
-            case 23:
+            case 21:
+                chanceCard.getChancecard(player);
+                break;
+            case 22:
                 System.out.println("test1");
                 Dubai = 420;
                 break;
-            case 24:
+            case 23:
                 System.out.println("test1");
                 NewYork = 450;
                 break;
