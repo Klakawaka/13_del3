@@ -4,7 +4,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
-    Field field = new Field();
+    Board field = new Board();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
 
@@ -19,6 +19,8 @@ public class Game {
         if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
             int newamount = player.account.addNewBalance(+ 10);
             gui.changeBalance(turnNum,newamount);
+
+
 
 
         }

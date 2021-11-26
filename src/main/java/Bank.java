@@ -3,6 +3,18 @@ public class Bank {
 
     private int balance;
 
+    public static final int INITIAL_BALANCE = 1000;
+
+    public Bank() {
+        this.balance = INITIAL_BALANCE;
+    }
+    public int getInitialBalance() {
+        return balance;
+    }
+    public void adjustBalance(int value) {
+        balance += value;
+        if (balance <= 0) {
+    }}
     public void account() {
         balance = 1000;
     }
