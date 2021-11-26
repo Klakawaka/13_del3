@@ -7,22 +7,27 @@ public class Game {
     Field field = new Field();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
-
+        int die1Facevalue = dice1.roll();
+        int die2Facevalue = dice2.roll();
         int dicesum;
         dice1.roll();
         dice2.roll();
-        dicesum = dice1.getFaceValue() + dice2.getFaceValue();
+        dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
+
         //hard coded scenario
         gui.moveplayer(turnNum,player.position);
-        field.field(player.position);
-        if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
-            int newamount = player.account.addNewBalance(+ 10);
-            gui.changeBalance(turnNum,newamount);
+        field.field(player,player.position);
+        //if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
+            //int newamount = player.account.addNewBalance(+ 10);
+            //gui.changeBalance(turnNum,newamount);
+            //gui.changeBalance(turnNum,player.account.getBalance());
+      // }
 
+        gui.Dice(die1Facevalue,die2Facevalue);
+        gui.changeBalance(turnNum,player.account.getBalance());
 
-        }
-
+        gui.moveplayer(turnNum,player.position);
 
 
 
