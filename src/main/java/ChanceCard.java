@@ -37,7 +37,7 @@ private final int MAX = 12 ;
                 break;
             case 5:
                 System.out.println("Du skal i fængsel i en runde");
-                player.setPosition(7); //7 er position for fængsel
+                player.setPosition(6); //6 er position for fængsel
                 break;
             case 6:
                 System.out.println("Du skal rykke 5 felter frem");
