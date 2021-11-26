@@ -19,8 +19,6 @@ public class Player {
        // addBalance()
 
     }
-    //setposition bruges til case 5, i case 5 rykkes man til fængsel. Nummeret for dette felt skal ændres
-    //under chancekort-klassen i player.setPosition(x)//
 
     public void setPosition(int moveto){
         position = moveto;
