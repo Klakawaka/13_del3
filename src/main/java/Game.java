@@ -15,7 +15,7 @@ public class Game {
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
 
-        //hard coded scenario
+
         gui.moveplayer(turnNum,player.position);
         field.field(player,player.position);
 
