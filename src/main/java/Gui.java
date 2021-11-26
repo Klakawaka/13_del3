@@ -19,7 +19,6 @@ public class Gui {
         //dice1 = new Dice(); Del af vores gamle kode.
 
         //dice2 = new Dice(); Del af vores gamle kode.
-
     public Gui() {
 
         GUI_Field[] fields = {

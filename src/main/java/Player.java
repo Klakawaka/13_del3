@@ -34,6 +34,9 @@ public class Player {
     //adposition bruges til case 3 og 4
     public void addpostion(int toAddPosition){
         position = (position + toAddPosition)%23;
+       // if (player.position >=23) ;
+       // addBalance()
+
     }
     //setposition bruges til case 5, i case 5 rykkes man til fængsel. Nummeret for dette felt skal ændres
     //under chancekort-klassen i player.setPosition(x)//

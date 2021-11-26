@@ -14,8 +14,6 @@ public class Board {
                 System.out.println("Nairobi");
                 Nairobi = 60;
                 player.account.addNewBalance(-60);
-
-
                 break;
             case  2:
                 System.out.println("Tripoli");

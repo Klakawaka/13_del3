@@ -18,6 +18,7 @@ public class Game {
         //hard coded scenario
         gui.moveplayer(turnNum,player.position);
         field.field(player,player.position);
+
         //if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
             //int newamount = player.account.addNewBalance(+ 10);
             //gui.changeBalance(turnNum,newamount);
@@ -30,9 +31,9 @@ public class Game {
         gui.moveplayer(turnNum,player.position);
 
 
-
     }
-    public  void game() {
+
+    public void game() {
 
 
         int amount = gui.hentAntalSpillere();
