@@ -4,8 +4,6 @@ import java.awt.*;
 
 public class Gui {
         String player_name;
-         //create and initilize dice1
-         //create and initilize dice2
         GUI_Player[] playerList; //create and initilize player //create and initilize player
         int playerCarPosition; //create car position tracking variable
         GUI gui; //create gui variable
@@ -13,12 +11,8 @@ public class Gui {
     int[] playerlistPosition;
     ChanceCard chance = new ChanceCard();
 
-        //Dice dice1,dice2; Del af vores gamle kode.
 
 
-        //dice1 = new Dice(); Del af vores gamle kode.
-
-        //dice2 = new Dice(); Del af vores gamle kode.
     public Gui() {
 
         GUI_Field[] fields = {
@@ -49,67 +43,7 @@ public class Gui {
         };
         gui = new GUI(fields, Color.CYAN); //initilize gui variable
     }
-       /*
-        gui.addPlayer(player); //adds a palyer to the game
-        playerCarPosition = 0; //init a players car position
-        field = gui.getFields()[playerCarPosition]; //initilize field variable, use playerCarPosition to get the players car position
-        field.setCar(player, true); //set the start position to current field
 
-        while (true) { //infinite loop to check for buttons
-            String chosenButton = gui.getUserButtonPressed("Click a button", "Button 1", "Button 2"); //create and initilize chosenButton
-
-            if (chosenButton == "Button 1") {
-                gui.getFields()[playerCarPosition].setCar(player, false); //hide the players car
-
-                int roll1Val = dice1.roll(); //roll dice one
-                int roll2Val = dice2.roll(); //roll dice two
-                int diceRollSum = roll1Val + roll2Val; //sum of the rolls
-
-                playerCarPosition = diceRollSum + playerCarPosition; //update the position tracker
-
-                if (playerCarPosition >=24) {
-                    playerCarPosition = 0 ;
-                }
-
-                gui.setDice(roll1Val, roll2Val); //change the dice in the gui
-                gui.getFields()[playerCarPosition].setCar(player, true); //show the car in the new position
-
-
-
-        // Del af vores gamle kode. Nedunder.
-        // Opretter spiller
-        //GUI_Player player = new GUI_Player("Stephen", 2000);
-        //gui.addPlayer(player);
-
-// Henter feltet
-        //GUI_Field field = gui.getFields()[0];
-
-// Sæt bilen til at blive vist
-        //field.setCar(player, true);
-        //while(true) {
-        //String chosenButton = gui.getUserButtonPressed(
-        //        "Click a button",
-        //        "Button 1", "Button 2"
-        // );
-
-
-        //if (chosenButton == "Button 1") {
-          //  int dice1Facevalue = dice1.roll();
-           // int dice2Facevalue = dice2.roll();
-           // int dicesum ;
-            //int oldsum = dicesum;
-            //gui.getFields()[oldsum].setCar(player, false);
-           // dice1.roll();
-           // dice2.roll();
-           // dicesum = dice1Facevalue + dice2Facevalue;
-           // gui.setDice(dice1Facevalue, dice2Facevalue);
-           // gui.getFields()[dicesum].setCar(player, true);
-
-          // Del af vores gamle kode. Ovenover.
-
-        }}
-
-        */
 
         public int hentAntalSpillere() {
             String chosenButton2 = gui.getUserButtonPressed("How many players are playing?", "2", "3", "4"); //create and initilize chosenButton

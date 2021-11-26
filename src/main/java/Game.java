@@ -4,7 +4,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
-    Board field = new Board();
+    Board field = new Board(); 
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
@@ -15,15 +15,10 @@ public class Game {
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
 
-        //hard coded scenario
+
         gui.moveplayer(turnNum,player.position);
         field.field(player,player.position);
 
-        //if (player.position == 3 || player.position == 9 || player.position == 15 || player.position == 21){
-            //int newamount = player.account.addNewBalance(+ 10);
-            //gui.changeBalance(turnNum,newamount);
-            //gui.changeBalance(turnNum,player.account.getBalance());
-      // }
 
         gui.Dice(die1Facevalue,die2Facevalue);
         gui.changeBalance(turnNum,player.account.getBalance());
@@ -31,9 +26,9 @@ public class Game {
         gui.moveplayer(turnNum,player.position);
 
 
-    }
 
-    public void game() {
+    }
+    public  void game() {
 
 
         int amount = gui.hentAntalSpillere();

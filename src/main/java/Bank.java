@@ -3,9 +3,7 @@ public class Bank {
 
     private int balance;
 
-    public void account() {
-        balance = 1000;
-    }
+    public void account() {balance = 5000;}
 
     public boolean addBalance(int money) {
         money = money + balance;
@@ -29,6 +27,5 @@ public class Bank {
         return balance;
     }
 
-    // Ændrer spillerens balance til 10000
-//player.setBalance(10000);
+
 }
