@@ -4,7 +4,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
-    Field field = new Field();
+    Board field = new Board();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
